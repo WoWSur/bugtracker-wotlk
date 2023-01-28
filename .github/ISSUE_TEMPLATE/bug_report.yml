@@ -1,0 +1,99 @@
+name: Reporte de Bug
+description: Crea un reporte de bug.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por tomarse su tiempo para completar un reporte de errores. Recuerde completar todos los campos, incluido el título anterior.
+        Se cerrará un reporte que no se llene correctamente.
+  - type: dropdown
+    id: client
+    attributes:
+      label: ¿En qué cliente juegas?
+      options:
+      - esES
+      - esMX
+      - enUS
+      - enGB
+      - deDE
+      - frFR
+      - ruRU
+      - otro
+    validations:
+      required: true
+  - type: dropdown
+    id: faction
+    attributes:
+      label: Faccion
+      options:
+      - Alianza
+      - Horda
+      - Ambas
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Comportamiento Actual
+      description: |
+        Describa el error en detalle. Base de datos para vincular hechizos, NPC, misiones, etc: https://wowgaming.altervista.org/aowow/
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamiento Blizzlike Esperado
+      description: |
+        Describe cómo debería funcionar sin el error. Enlace a evidencia si es posible, como videos de YouTube o comentarios de WoWHead de la época.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Fuente
+      description: |
+        AVISO: incluye fuentes en tu informe de error que sean relevantes para la versión 3.3.5a del juego, 
+        cerraremos cualquier error como "X debe cambiarse a Y" informado sin fuentes.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Pasos para reproducir el problema
+      description: |
+        Describa con precisión cómo reproducir el error para que podamos corregirlo o confirmar su existencia:
+        - ¿Qué comandos usar? ¿A qué NPC teletransportarse?
+        - Otros Pasos
+      placeholder: |
+        1. 
+        2. 
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: Notas Extra
+      description: |
+        Cualquier información que pueda ayudar a los desarrolladores a identificar y solucionar el problema debe incluirse aquí.
+        Ejemplos:
+        Enlaces a objetos/PNJ/misiones desde https://wowgaming.altervista.org/aowow/
+      placeholder: |
+        None
+    validations:
+      required: false
+  - type: textarea
+    id: os
+    attributes:
+      label: Sistema Operativo
+      value: |
+        Windows 7/10/11
+    validations:
+      required: true
+  - type: textarea
+    id: customizations
+    attributes:
+      label: Customizaciones como pack HD en su cliente
+      value: |
+        None
+    validations:
+      required: false
