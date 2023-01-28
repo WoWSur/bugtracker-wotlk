@@ -1,6 +1,7 @@
 name: Reporte de Bug
 description: Crea un reporte de bug.
-labels: ["tipo:bug", "estado:no-confirmado"]
+labels: ["tipo:bug", "estado:no-confirmado", "estado:sin-asignar"]
+assignees: "0xCiBeR"
 body:
   - type: markdown
     attributes:
