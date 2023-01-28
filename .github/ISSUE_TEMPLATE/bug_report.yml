@@ -1,7 +1,7 @@
 name: Reporte de Bug
 description: Crea un reporte de bug.
 labels: ["tipo:bug", "estado:no-confirmado", "estado:sin-asignar"]
-assignees: "0xCiBeR"
+assignees: "@WoWSur/triage"
 body:
   - type: markdown
     attributes:
