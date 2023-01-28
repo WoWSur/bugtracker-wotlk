@@ -1,5 +1,6 @@
 name: Reporte de Bug
 description: Crea un reporte de bug.
+labels: ["bug", "no-confirmado"]
 body:
   - type: markdown
     attributes:
@@ -9,7 +10,7 @@ body:
   - type: dropdown
     id: client
     attributes:
-      label: ¿En qué cliente juegas?
+      label: ¿En qué cliente jugas?
       options:
       - esES
       - esMX
@@ -89,11 +90,12 @@ body:
         Windows 7/10/11
     validations:
       required: true
-  - type: textarea
+  - type: dropdown
     id: customizations
     attributes:
-      label: Customizaciones como pack HD en su cliente
-      value: |
-        None
+      label: Tiene customizaciones en su cliente como Pack HD, Razas WoD, etc?
+      options:
+      - Si
+      - No
     validations:
-      required: false
+      required: true
