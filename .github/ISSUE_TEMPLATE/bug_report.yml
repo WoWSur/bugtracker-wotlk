@@ -1,6 +1,6 @@
 name: Reporte de Bug
 description: Crea un reporte de bug.
-labels: ["bug", "no-confirmado"]
+labels: ["tipo:bug", "estado:no-confirmado"]
 body:
   - type: markdown
     attributes:
